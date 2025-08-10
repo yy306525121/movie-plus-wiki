@@ -4,6 +4,10 @@
 | [movie-plus](./movie-plus/README.md) | emby/plus 直连播放功能 |
 | [token-115](./token-115)             | 扫码获取115token     |
 
+### 欢迎入群
+
+加我微信入群：yy306525121
+
 ### movie-plus支持功能
 * plex/emby直连播放（支持一个容器同时接入plex和emby）
 * 多网盘支持，支持对接多个123云盘和115云盘
