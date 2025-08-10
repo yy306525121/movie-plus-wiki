@@ -1,0 +1,12 @@
+services:
+  movie-plus:
+    image: akafra/movie-plus
+    container_name: movie-plus
+    environment:
+      SPRING_PROFILES_ACTIVE: 'prod,user'
+    ports:
+      - 30009:8080
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+      - ./config:/config

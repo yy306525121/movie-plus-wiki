@@ -1,0 +1,46 @@
+emby-plus:
+  # 内网ip段，只填开头部分即可，比如你得内网是192.168.x.x，只需要填192.168即可，多个内网段使用英文逗号(,)分隔
+  lan-ip: 192.168,10.110
+  # 如果你使用了strm，这里把strm前缀填写在这里，多个前缀使用英文逗号(,)分隔, 如果未使用strm，这里删除即可（strm前缀是什么请看文档中关于strm前缀说明的部分）
+  strm-prefix-path: xxxxxxxxxx,xxxxxxxxx
+  plex:
+    # 外部通过movie-plus访问plex的域名部分（只需要填写域名，不能和emby的域名一样）
+    host: plex.xxx.com
+    # movie-plus和plex内网通信的地址
+    inner-address: http://192.168.50.238:32400
+  emby:
+    # 外部通过movie-plus访问emby的域名部分（只需要填写域名，不能和plex的域名一样）
+    host: emby.xxx.com
+    # movie-plus和emby内网通信的地址
+    inner-address: http://192.168.50.238:8096
+    # emby的api-key，在emby server后台-高级-API密钥中获取
+    api-key: xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    # 是否在启动时提前缓存emby的媒体库目录，true:开启   false:关闭
+    cache-path: true
+  auto-transfer:
+    # 是否开启自动转存功能， true:开启 false:关闭
+    enable: true
+    # 123离线下载的最大同时下载数（123最高支持10个任务同时下载，所以这里设置超过10个也没用）
+    max-thread: 3
+    # 转存来源网盘名称（这里的名字要和下面cloud-storage-list中的网盘名称一样）
+    source-cloud-storage-name: 115云盘
+    # 转存来源网盘的路径
+    source-path: /movie-plus
+    # 转存目的地网盘的名称（这里的名字要和下面cloud-storage-list中的网盘名称一样）
+    dest-cloud-storage-name: 123云盘
+    # 转存目的地网盘的路径
+    dest-path: /转存/自动转存
+    # 转存任务的间隔时间（单位：分钟） 默认：10分钟
+    period-minute: 3
+  cloud-storage-list:
+    - name: 123云盘  # 123云盘名称
+      type: type_123  # 123云盘的类型值
+      path-prefix: /123  # 123云盘的挂载前缀
+      client-id: xxxxxxxxxxxxxxxxxxxxxxxxx  # 123开放平台申请的client-id
+      client-secret: xxxxxxxxxxxxxxxxxxxxxxx # 123开放平台申请的clent-secret
+    - name: 115云盘 # 115云盘名称
+      type: type_115 # 115云盘的类型值
+      path-prefix: /115 # 115云盘挂载前缀
+      access-token: xxxxxxxxxxxxxxxxxxxxxxx # 115云盘的access_token(获取方式见文档)
+      refresh-token: xxxxxxxxxxxxxxxx # 115云盘的refresh-token(获取方式见文档)
+      expire-time: xxxxxxxxxxxxxxxxxxxxx # 115云盘的refresh-token(获取方式见文档)

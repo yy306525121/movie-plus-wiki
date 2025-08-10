@@ -1,0 +1,9 @@
+services:
+  movie-plus:
+    image: akafra/token-115
+    container_name: token-115
+    environment:
+      CLIENT_ID: '这里填写你自己的115开放平台申请应用的AppID'
+    ports:
+      - 38099:8080
+    restart: unless-stopped
