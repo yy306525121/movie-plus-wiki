@@ -4,12 +4,12 @@ emby-plus:
   # 如果你使用了strm，这里把strm前缀填写在这里，多个前缀使用英文逗号(,)分隔, 如果未使用strm，这里删除即可（strm前缀是什么请看文档中关于strm前缀说明的部分）
   strm-prefix-path: xxxxxxxxxx,xxxxxxxxx
   plex:
-    # 外部通过movie-plus访问plex的域名部分（只需要填写域名，不能和emby的域名一样）
+    # 外部通过movie-plus访问plex的域名部分（只需要填写域名,不需要https://和端口，不能和emby的域名一样）
     host: plex.xxx.com
     # movie-plus和plex内网通信的地址
     inner-address: http://192.168.50.238:32400
   emby:
-    # 外部通过movie-plus访问emby的域名部分（只需要填写域名，不能和plex的域名一样）
+    # 外部通过movie-plus访问emby的域名部分（只需要填写域名,不需要https://和端口，不能和plex的域名一样）
     host: emby.xxx.com
     # movie-plus和emby内网通信的地址
     inner-address: http://192.168.50.238:8096
