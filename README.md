@@ -7,6 +7,7 @@
 ### 欢迎入群
 
 加我微信入群：yy306525121
+本项目已收费，捐赠请看[这里](./donat.README.md)
 
 ### movie-plus支持功能
 * plex/emby直连播放（支持一个容器同时接入plex和emby）
