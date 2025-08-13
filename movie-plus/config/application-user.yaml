@@ -38,6 +38,9 @@ emby-plus:
       path-prefix: /123  # 123云盘的挂载前缀
       client-id: xxxxxxxxxxxxxxxxxxxxxxxxx  # 123开放平台申请的client-id
       client-secret: xxxxxxxxxxxxxxxxxxxxxxx # 123开放平台申请的clent-secret
+      money-play-enable: false  # 是否开启花钱直连功能，true:是， false:否，  默认不开启，  该功能需要在123上购买直连流量
+      money-play-private-key: xxxxx  # 123云盘 url鉴权密钥
+      money-play-uid: 111111   # 123云盘用户UID
     - name: 115云盘 # 115云盘名称
       type: type_115 # 115云盘的类型值
       path-prefix: /115 # 115云盘挂载前缀
