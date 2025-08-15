@@ -1,5 +1,14 @@
 # application-user.yaml配置文件说明
 
+## emby-plus.lan-ip（非必填）
+这个配置用来控制内网是否走直连
+* 内网ip段，只填开头部分即可，比如你得内网是192.168.x.x，只需要填192.168即可，多个内网段使用英文逗号(,)分隔
+
+## emby-plus.strm-prefix-path
+如果你使用了strm，需要配置这个
+* 如果你使用了strm，这里把strm前缀填写在这里，多个前缀使用英文逗号(,)分隔, 如果未使用strm，这里删除即可（strm前缀是什么请看文档中关于strm前缀说明的部分）
+* 注意：这里的strm路径请不要把strm内容中的路径前缀部分也填入这里
+* 例如你的strm文件内容是 `http://xxxxx:19798/123云盘/video/电影/国产/xxx.mkv` 这里填入`http://xxxxx:19798`即可， `/123云盘`可以作为`path-prefix`值
 ## emby-plus.emby（必填）
 这一部分配置了movie-plus链接emby的配置
 * emby-plus.emby.host （非必填）
