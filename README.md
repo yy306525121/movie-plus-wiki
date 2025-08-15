@@ -17,7 +17,7 @@
 ### 部署方式
 先下载代码中的movie-plus部分，里面已经包含了docker-compose.yaml文件，直接使用
 
-配置文件在/movie-plus/config/application.yaml中
+配置文件在/movie-plus/config/application.yaml中，配置文件内容说明看[这里](./CONFIG_README.md)
 
 
 ### strm前缀说明
