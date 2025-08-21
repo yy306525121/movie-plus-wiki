@@ -4,6 +4,7 @@ services:
     container_name: movie-plus
     environment:
       SPRING_PROFILES_ACTIVE: 'prod,user'
+      TZ: Asia/Shanghai
     ports:
       - 30009:8080
     restart: unless-stopped
